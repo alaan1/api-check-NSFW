@@ -57,7 +57,7 @@ class NSFWDetector:
             "utoken": utoken
         }
 
-        time.sleep(2)  # نفس سكربتك
+        time.sleep(1)  # نفس سكربتك
         res = self.session.post(url, data=payload, headers=self.headers)
         return res.json()["results"][0]
 
