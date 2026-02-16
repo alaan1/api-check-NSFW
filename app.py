@@ -88,6 +88,10 @@ detector = NSFWDetector()
 # ========================
 # API Route
 # ========================
+@app.route("/")
+def home():
+    return "You have to upload a picture"
+    
 @app.route("/check", methods=["POST"])
 def check():
 
